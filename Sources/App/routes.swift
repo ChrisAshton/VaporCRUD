@@ -13,6 +13,12 @@ public func routes(_ router: Router) throws {
     
     // MARK: POST routes
     router.post("users", use: userController.create)
+    
+    // MARK: PATCH routes
+    router.patch("users", User.parameter, use: userController.update)
+    
+    // MARK: DELETE routes
+    router.delete("users", User.parameter, use: userController.delete)
 }
 
 // Important: Your class or struct conforms to Content

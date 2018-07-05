@@ -13,3 +13,4 @@ final class User: PostgreSQLModel {
 
 extension User: Content {}
 extension User: Migration {}
+extension User: Parameter {}
