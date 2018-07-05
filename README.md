@@ -19,6 +19,6 @@
     </a>
 </center>
 
-Sweet [Vapor tutorial by Martin Lasek][tutorial] on how to use PostgreSQL in Vapor3
+Sweet [Vapor tutorial by Martin Lasek][tutorial] on how to write a CRUD API using JSON in Vapor3
 
-[tutorial]: https://medium.com/@martinlasek/tutorial-how-to-use-postgresql-efb62a434cc5
+[tutorial]: https://medium.com/@martinlasek/tutorial-write-a-crud-api-using-json-c1edb1439d8a
