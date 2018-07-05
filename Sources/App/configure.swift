@@ -1,6 +1,5 @@
 import FluentPostgreSQL
 import Vapor
-import Leaf
 
 /// Called before your application initializes.
 public func configure(
@@ -15,17 +14,11 @@ public func configure(
     try routes(router)
     services.register(router, as: Router.self)
     
-    let myService = NIOServerConfig.default(port: 8003)
+    let myService = NIOServerConfig.default(port: 8004)
     services.register(myService)
-    
-    // Register the LeafProvider
-    try services.register(LeafProvider()) // added
     
     // Register FluentPostgreSQL
     try services.register(FluentPostgreSQLProvider())
-    
-    // Set LeafRenderer as our preferred ViewRenderer
-    config.prefer(LeafRenderer.self, for: ViewRenderer.self) // added
     
     // Configure PostgreSQL server
     
